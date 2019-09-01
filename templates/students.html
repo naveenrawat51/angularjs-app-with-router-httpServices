@@ -1,0 +1,9 @@
+<h1> All student List</h1>
+Name: <input type="text" ng-model="name"> <button ng-click="searchStudent()">Search Student</button>
+<ul>
+        <li ng-repeat="student in students">
+         <a href="#!students/{{student.id}}">
+            {{student.name}}
+            </a>
+        </li>
+    </ul>
